@@ -18,6 +18,22 @@ function App() {
             });
     }, []);
 
+    /** async await , try catch 변경 */
+    // useEffect(() => {
+    //     const fetchCoins = async () => {
+    //         try {
+    //             const response = await fetch('https://api.coinpaprika.com/v1/tickers');
+    //             const json = await response.json();
+    //             setCoins(json);
+    //             setLoading(false);
+    //         } catch (error) {
+    //             console.error('Failed to fetch coins:', error);
+    //         }
+    //     };
+
+    //     fetchCoins();
+    // }, []);
+
     const handleSearch = (event) => {
         const inputValue = event.target.value.toLowerCase(); // 입력값을 소문자로 변환
         setUserInput(inputValue);
