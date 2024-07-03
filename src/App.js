@@ -1,3 +1,5 @@
+/**  https://api.coinpaprika.com/v1/tickers : coin API url */
+
 import { useState, useEffect } from 'react';
 
 function App() {
